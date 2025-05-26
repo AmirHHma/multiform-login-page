@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@font-face {
+    font-family: UbuntoBold;
+    src: url('fonts/Ubuntu-Bold.ttf');
+}
+@font-face {
+    font-family: UbuntoRegular;
+    src: url('fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: UbuntoMedium;
+    src: url('fonts/Ubuntu-Medium.ttf');
+}
+
+
+@theme {
+    --color-Marine-blue: hsl(213, 96%, 18%);
+    --color-Purplish-blue: hsl(243, 100%, 62%);
+    --color-Pastel-blue: hsl(228, 100%, 84%);
+    --color-Light-blue: hsl(206, 94%, 87%);
+    --color-Strawberry-red: hsl(354, 84%, 57%);
+    --color-Cool-gray: hsl(231, 11%, 63%);
+    --color-Light-gray: hsl(229, 24%, 87%);
+    --color-Magnolia: hsl(217, 100%, 97%);
+    --color-Alabaster: hsl(231, 100%, 99%);
+    --font-UbuntoBold:UbuntoBold;
+    --font-UbuntoRegular:UbuntoRegular;
+    --font-UbuntoMedium:UbuntoMedium;
+    --default-font-family:UbuntoRegular;
+    --text-base:14px;
+    --default-transition-duration:200ms;
+}
+
+@layer base{
+    :root{
+        --color-Marine-blue: hsl(213, 96%, 18%);
+        --color-Purplish-blue: hsl(243, 100%, 62%);
+        --color-Pastel-blue: hsl(228, 100%, 84%);
+        --color-Light-blue: hsl(206, 94%, 87%);
+        --color-Strawberry-red: hsl(354, 84%, 57%);
+        --color-Cool-gray: hsl(231, 11%, 63%);
+        --color-Light-gray: hsl(229, 24%, 87%);
+        --color-Magnolia: hsl(217, 100%, 97%);
+        --color-Alabaster: hsl(231, 100%, 99%);
+        --default-transition-duration:200ms;
+        
+    }
+}
+@utility active-step {
+   @apply bg-Light-blue text-Marine-blue
+}
+
+
+
+@utility backPhone{
+    background-image: url('./assets/bg-sidebar-desktop.svg') ;
+    background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+}
+@utility invalidInput{
+    position: relative;
+    & > input{
+        @apply outline-Strawberry-red
+    }
+    &::after{
+        position: absolute;
+        content: 'This field is required';
+        right: 0;
+        top:5px;
+        @apply text-Strawberry-red font-UbuntoBold max-sm:text-xs sm:text-sm
+    }
+        
+}
+.inputNumberRemove::-webkit-outer-spin-button,.inputNumberRemove::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}

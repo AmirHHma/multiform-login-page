@@ -1,6 +1,5 @@
 {
   "name": "template",
-  "homepage": "https://AmirHHma.github.io/multiform-login-page",
   "author": "AmirHosein",
   "private": false,
   "version": "0.0.0",
@@ -13,6 +12,7 @@
     "predeploy": "npm run build ",
     "deploy": "gh-pages -d dist"
   },
+   "homepage": "https://amirhhma.github.io/multiform-login-page", 
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
     "@tailwindcss/vite": "^4.0.14",

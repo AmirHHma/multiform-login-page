@@ -2,8 +2,7 @@
   "name": "template",
   "homepage": "https://AmirHHma.github.io/multiform-login-page",
   "author": "AmirHosein",
-  "private": true,
-  "description": "A template for a multi-form login page using React, Redux, and Tailwind CSS.",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

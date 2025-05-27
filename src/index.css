@@ -13,7 +13,7 @@
 }
 
 
-@theme {
+@theme{
     --color-Marine-blue: hsl(213, 96%, 18%);
     --color-Purplish-blue: hsl(243, 100%, 62%);
     --color-Pastel-blue: hsl(228, 100%, 84%);
@@ -43,7 +43,6 @@
         --color-Magnolia: hsl(217, 100%, 97%);
         --color-Alabaster: hsl(231, 100%, 99%);
         --default-transition-duration:200ms;
-        
     }
 }
 @utility active-step {

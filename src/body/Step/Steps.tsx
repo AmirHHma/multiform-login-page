@@ -10,7 +10,7 @@ function Step() {
   return (
     <>
       <section
-        className="grid align-middle place-items-center lg:grid-cols-[1fr_2fr] lg:grid-rows-1   lg:w-4xl xl:w-5xl xl:h-[38rem] lg:h-[32rem]  bg-Alabaster lg:p-3 lg:rounded-xl  "
+        className="grid align-middle place-items-center lg:grid-cols-[1fr_2fr] lg:grid-rows-1   lg:w-4xl xl:w-5xl xl:h-[38rem] lg:h-[32rem]  bg-Alabaster shadow-lg   lg:p-3 lg:rounded-xl  "
       >
         <div
           className="max-lg:bg-[url(./assets/bg-sidebar-mobile.svg)]  max-lg:w-full max-lg:h-2/5
@@ -23,11 +23,11 @@ function Step() {
         >
           <StepChangerUL />
         </ul>
-        <div className=" lg:h-full  z-10  lg:row-start-1 lg:col-start-2 p-3 rounded-xl  bg-Alabaster">
+        <div className=" lg:h-full   z-10  lg:row-start-1 lg:col-start-2 p-3 rounded-xl  bg-Alabaster">
           <div className="z-10   lg:h-full">
             <div className="lg:h-full lg:w-xl">
               <Routes>
-                <Route path="/" element={<StepOne />}></Route>
+                <Route path="/multiform-login-page" element={<StepOne />}></Route>
                 <Route path="/plan" element={<StepTwo />}></Route>
                 <Route path="/service" element={<StepThree />}></Route>
                 <Route path="/review" element={<StepFour />}></Route>

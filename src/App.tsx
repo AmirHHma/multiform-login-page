@@ -4,7 +4,9 @@ function App() {
 
   return (
     <>
-     <Body></Body>
+     <div className=' h-screen w-screen flex items-center justify-center'>
+        <Body></Body>
+     </div>
     </>
   )
 }

@@ -12,7 +12,7 @@
     "predeploy": "npm run build ",
     "deploy": "gh-pages -d dist"
   },
-   "homepage": "https://amirhhma.github.io/multiform-login-page", 
+   "homepage": "https://amirhhma.github.io/multi-login-page", 
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
     "@tailwindcss/vite": "^4.0.14",

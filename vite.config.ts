@@ -12,5 +12,5 @@ export default defineConfig({
   build: {
     outDir: 'dist', // Explicit output directory
   },
-  base:'/', // Base public path
+  base:'/multiform-login-page', // Base public path
 })

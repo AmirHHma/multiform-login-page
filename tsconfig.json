@@ -1,11 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "lib": ["es2015", "dom"],
-    "module": "CommonJS", // or "CommonJS" depending on your environment
-    "jsx": "preserve", // or "preserve"
+    "target": "ESNext",
+    "module": "ESNext", // Match Vite's ESM environment
+    "jsx": "react-jsx", // Transforms JSX to React.js calls (no .jsx files)
+    "outDir": "./dist", // Redirect output here
+    "rootDir": "./src", // Only compile files in src/
     "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
     "moduleResolution": "node",
-    "allowJs": true
-  }
+    "allowJs": false // Disable to avoid .js file conflicts
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

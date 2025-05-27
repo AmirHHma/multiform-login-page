@@ -1,17 +1,23 @@
 {
   "name": "template",
+  "homepage": "https://AmirHHma.github.io/multiform-login-page",
+  "author": "AmirHosein",
   "private": true,
+  "description": "A template for a multi-form login page using React, Redux, and Tailwind CSS.",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": " vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build ",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
     "@tailwindcss/vite": "^4.0.14",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
